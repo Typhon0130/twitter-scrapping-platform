@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
+        "dom",
+        "dom.iterable",
+        "esnext"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,9 +18,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ],
+    }
   },
   "include": [
     "src"
+  ],
+  "typeRoots": [
+    "./node_modules/@types",
+    "./src/@types"
   ]
 }
